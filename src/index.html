@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Online Book Platfrom</title>
+
+    <!-- Add any JavaScript file here -->
+    <!-- <script src="script.js" defer></script> -->
+  </head>
+  <body>
+    <header>
+      <!-- Navigation or site header can go here -->
+      <nav>
+        <div>
+          <a class="logo-button" href="/">This is a Book Platform</a>
+        </div>
+        <ul class="nav-links">
+          <li><a onclick="navigateTo(event,'/')" href="/">Home</a></li>
+          <li class="dropdown">
+            <a class="categories" href="#">Categories</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Fiction</li>
+              <li><a href="#">Classic</a></li>
+              <li><a href="#">Romance</a></li>
+            </ul>
+          </li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+        <div class="search-container">
+          <div class="search-bar">
+            <input type="text" placeholder="Search for books" />
+          </div>
+          <button class="search-button">
+            <img
+              class="search-icon"
+              src=""
+              alt="search icon"
+            />
+          </button>
+        </div>
+        <div class="user-actions">
+          <button id="login-btn">Sign In</button>
+          <button id="signup-btn">Sign Up</button>
+          <div class="user-profile hide">
+            <span>Welcome [username]</span>
+            <ul class="dropdown">
+              <li><a href="profile.html">My Profile</a></li>
+              <li><a href="reviews.html">My Reviews</a></li>
+              <li><a href="logout.html">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="app">
+      <!-- Main content of the page -->
+        <section class="all-books hidden">
+        </section>
+        
+        <div id="books-container">
+        </div>
+
+        <section class="details-section">
+        </section>
+        
+      </main>
+  </body>
+</html>
+
+     

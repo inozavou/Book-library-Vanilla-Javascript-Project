@@ -1,0 +1,248 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  color: #4e4e4e;
+  background-color: rgb(236, 233, 214);
+  font-family: "Lucida Sans Unicode", sans-serif;
+}
+
+header nav {
+  font-family: "Lucida Sans Unicode", sans-serif;
+  background-color: rgb(210, 219, 200);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90px;
+  padding: 5px 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.logo-button {
+  font-size: 30px;
+  text-decoration: none;
+  color: #4e4e4e;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.categories {
+  text-decoration: none;
+  color: #4e4e4e;
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.nav-links li {
+  position: relative;
+  margin-right: 20px;
+}
+
+.dropdown {
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 10px 0;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 5px;
+}
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+  white-space: nowrap;
+}
+.dropdown-menu li a:hover {
+  color: rgb(255, 232, 27);
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.search-container {
+  display: flex;
+}
+.search-bar {
+  border: none;
+}
+.search-icon {
+  width: 10px;
+  height: 10px;
+  border: none;
+}
+
+.user-actions {
+  display: flex;
+}
+#login-btn {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  margin: 10px;
+  border: none;
+}
+#signup-btn {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  margin: 10px;
+  border: none;
+}
+
+.book {
+  width: 80px;
+}
+
+.book-container {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 80px;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+#genre-title {
+  display: flex;
+  color: #4e4e4e;
+  justify-content: center;
+}
+
+.text-display {
+  height: 100px;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+}
+.all-books {
+  margin: 20px;
+}
+
+.hide {
+  display: none;
+}
+.details-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-card {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  background-color: rgb(210, 219, 200);
+  margin-bottom: 15px;
+  border-radius: px;
+}
+.book-description {
+  margin-top: 10px;
+}
+
+.book-details {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.detail-book-thumbnail-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+.italic {
+  font-style: italic;
+  color: rgb(114, 119, 108);
+}
+
+#read-btn,
+#rate-btn {
+  width: 50px;
+  border-style: none;
+  margin-top: 5px;
+}
+
+.detail-book-cover {
+  width: 120px;
+  border-radius: 5px;
+}
+
+.books-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+.genre {
+  background-color: rgb(210, 219, 200);
+  border-radius: 10px;
+  height: 320px;
+  position: relative;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+  justify-content: center;
+}
+.carousel-container {
+  overflow: hidden;
+  align-items: center;
+}
+.fantasy-carousel-wrapper,
+.romance-carousel-wrapper,
+.classic-carousel-wrapper {
+  display: flex;
+
+  align-items: start;
+}
+.book-cover {
+  width: 130px;
+  height: 200px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.text-title {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 1px 5px;
+  cursor: pointer;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+}
+.arrow-left {
+  position: absolute;
+  left: -40px;
+}
+.arrow-right {
+  position: absolute;
+  right: -40px;
+}
