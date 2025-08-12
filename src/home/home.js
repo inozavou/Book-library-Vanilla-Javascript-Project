@@ -90,6 +90,7 @@ const createGenreCarousel = async (genre) => {
     }
     const genreInfo = await response.json();
 
+    console.log(genre, genreInfo);
     return carousel(genre, genreInfo);
 
     // renderBooksInCategories(genreInfo);
@@ -98,7 +99,6 @@ const createGenreCarousel = async (genre) => {
     return null;
   }
 };
-
 export const getHomeContent = async () => {
   const booksContainer = document.createElement("div");
   booksContainer.className = "books-container";
